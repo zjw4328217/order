@@ -1,0 +1,267 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "boss",
+      "username": "admin",
+      "password": 123456,
+      "right": "超级管理员",
+      "roleState": true,
+      "default": true,
+      "roleType": 5
+    },
+    {
+      "name": "思设计师",
+      "username": "z11",
+      "password": "111",
+      "right": "拆单",
+      "roleType": 4,
+      "id": 2,
+      "roleState": true,
+      "description": "4234324324"
+    },
+    {
+      "name": "李设计师",
+      "username": "213213",
+      "password": "21321321",
+      "right": "设计师",
+      "roleState": true,
+      "roleType": 3,
+      "id": 3
+    },
+    {
+      "name": "sadasd",
+      "username": "dsadas",
+      "password": "sadasd",
+      "right": "设计师",
+      "roleState": true,
+      "roleType": 3,
+      "id": 4
+    },
+    {
+      "name": "店员a",
+      "username": "dianyuana",
+      "password": "dianyuana",
+      "right": "店员",
+      "roleState": true,
+      "roleType": 1,
+      "id": 5
+    },
+    {
+      "name": "店员b",
+      "username": "dianyuanb",
+      "password": "dianyuanb",
+      "right": "店员",
+      "roleState": true,
+      "roleType": 1,
+      "id": 6
+    },
+    {
+      "name": "王五店长",
+      "username": "wangwu",
+      "password": "wangwu",
+      "right": "店长",
+      "description": "王五店长",
+      "roleState": true,
+      "roleType": 2,
+      "id": 7
+    },
+    {
+      "name": "厂长a",
+      "username": "changzhang",
+      "password": "changzhang",
+      "right": "厂长",
+      "description": "厂长a",
+      "roleState": true,
+      "roleType": 5,
+      "id": 8
+    },
+    {
+      "name": "设计师aa",
+      "username": "design",
+      "password": "design",
+      "right": "设计师",
+      "roleState": true,
+      "roleType": 3,
+      "id": 9
+    }
+  ],
+  "rights": [
+    {
+      "roleType": 1,
+      "rights": [
+        "创建订单",
+        "订单查询",
+        "分配设计师"
+      ],
+      "rightName": "店员",
+      "id": 1
+    },
+    {
+      "roleType": 2,
+      "rights": [
+        "创建订单",
+        "订单查询",
+        "分配设计师",
+        "分配店员任务"
+      ],
+      "rightName": "店长",
+      "id": 2
+    },
+    {
+      "roleType": 3,
+      "rights": [
+        "订单查询",
+        "订单修改",
+        "分配店员任务"
+      ],
+      "rightName": "设计师",
+      "id": 3
+    },
+    {
+      "roleType": 4,
+      "rights": [
+        "订单查询",
+        "分配流程"
+      ],
+      "rightName": "拆单",
+      "id": 4
+    },
+    {
+      "roleType": 5,
+      "rights": [
+        "订单查询",
+        "分配设计师",
+        "修改订单状态",
+        "添加角色",
+        "设置权限",
+        "发货"
+      ],
+      "rightName": "厂长",
+      "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "ordername": "11111111111111",
+      "orderDescribe": "1111111111111111111111",
+      "orderInfo": [
+        "A"
+      ],
+      "orderDesign": "李设计师",
+      "date": "2020-03-23 13:57:14",
+      "orderCreate": "店员a",
+      "isChangeCreator": true,
+      "isChangeDesign": true,
+      "orderID": "202003231357141",
+      "orderDescribeTwo": "111111111111111",
+      "orderprice": "1111111111",
+      "orderpricesubtotal": "11111111111111111",
+      "orderDesignT": "店员a",
+      "isBuilded": false,
+      "id": 1
+    },
+    {
+      "ordername": "3213123",
+      "orderDescribe": "231231",
+      "orderInfo": [
+        "A"
+      ],
+      "orderDesign": "李设计师",
+      "date": "2020-03-23 14:02:54",
+      "orderCreate": "店员a",
+      "isChangeCreator": true,
+      "isChangeDesign": true,
+      "orderID": "202003231402541",
+      "orderDescribeTwo": "11111111111111111",
+      "orderprice": "1111111",
+      "orderpricesubtotal": "11111111111111111111",
+      "orderDesignT": "店员a",
+      "isBuilded": true,
+      "id": 2,
+      "orderDesignThree": "厂长a"
+    },
+    {
+      "ordername": "1111",
+      "orderDescribe": "1111111111111111111",
+      "orderInfo": [
+        "A",
+        "B",
+        "C"
+      ],
+      "orderDesign": "李设计师",
+      "date": "2020-03-23 20:25:56",
+      "orderCreate": "店员a",
+      "isChangeCreator": true,
+      "isChangeDesign": true,
+      "orderID": "202003232025561",
+      "orderDescribeTwo": "21321321",
+      "orderprice": "333333123",
+      "orderpricesubtotal": "213213213123",
+      "orderDesignT": "店员a",
+      "isBuilded": false,
+      "id": 3
+    },
+    {
+      "ordername": "1111111111111",
+      "orderDescribe": "111111111111111111111",
+      "orderInfo": [
+        "A"
+      ],
+      "orderDesign": "李设计师",
+      "date": "2020-03-23 21:18:35",
+      "orderCreate": "店员a",
+      "isChangeCreator": true,
+      "isChangeDesign": true,
+      "orderID": "202003232118351",
+      "orderDescribeTwo": "",
+      "orderprice": "",
+      "orderpricesubtotal": "",
+      "orderDesignT": "店员a",
+      "isBuilded": true,
+      "id": 4,
+      "orderDesignThree": "boss"
+    },
+    {
+      "ordername": "321312",
+      "orderInfo": [
+        "A"
+      ],
+      "orderDesign": "李设计师",
+      "date": "2020-03-23 23:13:41",
+      "orderCreate": "店员a",
+      "isChangeCreator": true,
+      "isChangeDesign": true,
+      "orderID": "202003232313411",
+      "orderprice": "43",
+      "orderpricesubtotal": "2342342",
+      "orderDesignT": "李设计师",
+      "isBuilded": true,
+      "orderDesignThree": "思设计师",
+      "orderDesignFour": "厂长a",
+      "id": 5,
+      "orderDescribeTwo": "4234234",
+      "isFinished": true
+    },
+    {
+      "ordername": "111111111111",
+      "orderInfo": [
+        "A"
+      ],
+      "orderDesign": "李设计师",
+      "date": "2020-03-23 23:58:25",
+      "orderCreate": "店员a",
+      "isChangeCreator": true,
+      "isChangeDesign": true,
+      "orderID": "202003232358251",
+      "orderDescribeTwo": "1111",
+      "orderprice": "11111111",
+      "orderpricesubtotal": "111111111111111111111",
+      "orderDesignT": "店员a",
+      "isBuilded": true,
+      "orderDesignThree": "思设计师",
+      "orderDesignFour": "",
+      "id": 6
+    }
+  ]
+}
